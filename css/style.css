@@ -1,0 +1,58 @@
+:root {
+    --primary: rgb(238, 156, 156);
+    --dark: rgb(117, 53, 42);
+    --light: rgb(240, 82, 82);
+    --shadow: 0 1px 5px rgb(36, 18, 51);  
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--primary);
+    margin: 30px;
+    line-height: 1,4;
+}
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.container {
+    display: grid;
+    gap: 20px;
+}
+
+nav ul {
+    display: grid;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+nav a {
+    background: var(--light);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+    transform: translateY(-2px);
+}
